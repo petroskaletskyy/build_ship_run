@@ -1,4 +1,4 @@
-FROM marktmilligan/goland as builder
+FROM golang as builder
 WORKDIR /src
 COPY src .
 RUN CGO_ENEBLED=0 go build
